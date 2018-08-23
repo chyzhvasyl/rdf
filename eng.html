@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, min-width=320px, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>  
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="header" id="top">
+<div class="container-fluid">
+  <!-- <div class="row navbar-wrap">       -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-blue" id="menu">
+          <a class="navbar-brand col-sm-3 col-md-2 col-xs-3" href="#top"><img src="img/logo_fdi.png" alt="FDI"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">          
+          <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        about us
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#aboutCompany">about us</a>
+                    <a class="dropdown-item" href="#history">history</a>
+                    <a class="dropdown-item" href="#products">products</a>
+                </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatWeCan">what we can</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatWeKnow">what we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#career">careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footerAdress">contact us</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-white col-sm-2">
+            <span class="text-green">eng</span> / <a class="text-white" id="langswitch" href="./">укр</a>
+          </span>
+      </div>
+    </nav>
+ <!-- </div> -->
+  <div class="row">
+          <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc" id="fadeLink1">
+                    <h3 class="text-white">FDI – GROUP</h3>
+                    <h3 class="text-white">OF SOFTWARE</h3>
+                    <h3 class="text-white">COMPANIES</h3>
+                    <p class="text-white">Our products are primarily complex management and database systems which we launch for financial, municipal, educational and agricultural sectors.</p>
+                    <a class="btn fadeLink" href="#aboutCompany">About company</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img src="img/slider1/slide1.jpg" data-src="img/slider1/slide1" alt="First slide" />
+                </div>
+              </div>
+              </div>
+               
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc" id="fadeLink2">
+                    <h3 class="text-white">NEW PROGRAMS —</h3>
+                    <h3 class="text-white">MODERN CITIES</h3>
+                    <p class="text-white">FDI software products solve complex and interesting tasks in the area of city and community management. Our customers are large and small Ukrainian communities which we help moving towards the digital era.</p>
+                    <a class="btn" href="#products">Our products</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="" src="img/slider1/slide2.jpg" data-src="img/slider1/slide2" alt="First slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h3 class="text-white">EVERYBODY</h3>
+                    <h3 class="text-white">WILL SEE YOUR WORK!</h3>
+                    <p class="text-white">Work for FDI is not only a professional challenge for any IT specialist, but a unique opportunity to create better living environment for millions of people. Join us and make your contribution today.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Join FDI</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="" src="img/slider1/slide3.jpg" data-src="img/slider1/slide3" alt="First slide">
+                </div>
+              </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  </div>
+</div>
+</section>
+<section class="aboutCompany" id="aboutCompany">
+<div class="container">
+  <div class="row">
+    <h2 class="title bg-blue text-white">about company</h2>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac1.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-green">
+          <p class="card-text">FDI is a group of IT companies from Ukraine which develop analytical systems and business applications. Created by practicing professionals from banking sector in 2011 as a system integrator for automating activities of financial institutions, the company has gained a considerable experience in creating software and developed its own data array management platform.</p>
+        </div>
+        <a href="#history" class="btn bg-blue text-white">History &rang;<span></span></a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac2.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-blue">
+          <p class="card-text text-white">FDI team has already implemented a number of complex management and database systems and continues to work actively to create data storages and analytical and reporting systems for customers from private and public sectors. Since 2016, our specialists have been working on automation and electronic document flow projects for Kyiv city government.</p>
+        </div>
+        <a href="#products" class="btn bg-green text-blue">Products &rang;</a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac3.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-green">
+          <p class="card-text">Skillful work with data arrays and analytics is our advantage. Using modern technologies such as Java and NodeJS, we are able to introduce the most innovative ideas.</p>
+        </div>
+        <a href="#ourSkills" class="btn bg-blue text-white">What we can &rang;</a>
+      </div>
+    </div>
+</div>
+</section>
+<section class="history" id="history">
+<div class="container-fluid">
+  <div class="historyWrap">
+    <div class="row">
+      <h2 class="title bg-green text-blue">history</h2>
+    </div>
+  <ul class="row justify-content-center">
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2011</div>
+        <div class="historyDesc">
+          <h3 class="">Establishment of FDI</h3>
+          <p class="">Company was established as a system integrator for the financial sector. It works with a number of Ukrainian banks.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2013</div>
+        <div class="historyDesc">
+          <h3 class="">Creation of Whiteant software complex</h3>
+          <p class="">Сompany developed and implemented its own analytical and payment system in six Ukrainian banks.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2015</div>
+      <div class="historyDesc">
+          <h3 class="">Extension of business scope</h3>
+          <p class="">Our specialists implemented a number of projects with the supply of IBM, Hitachi and Oracle DBMS based hardware and software systems.</p>
+      </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2016</div>
+        <div class="historyDesc">
+          <h3 class="">Orders from public sector</h3>
+          <p class="">FDI started to develop software for government projects, including development and implementation of “Maino” Information Analytical System for Kyiv City State Administration.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date-today">Today</div>
+        <div class="historyDesc">
+          <h3 class="">Development of expertise</h3>
+          <p class="">FDI specialists are working on more than a dozen city management automation projects. Company participates in tenders for developing software for cities all over Ukraine.</p>
+        </div><div class="clearfix"></div>
+    </li>
+  </ul>
+  </div>
+    <span class="romb"> </span>
+</div>
+</section>
+<section class="howWeWork" id="howWeWork">
+<div class="">
+  <div class="howWeWorkWrap">
+    <div class="row">
+      <h2 class="title bg-blue text-white">how we work</h2>
+    </div>
+    <div class="row ">
+        <div class="col-12 col-md-6 brdr_r brdr_b">
+          <div class="howWeWork_item">
+            <div class="row">
+              <div class="col-12 col-md-3 ">
+                <img src="img/howWeWork/Untitled-20.png" alt="Ідея">
+              </div>
+              <div class="col-md-9">
+                <h3 class="howWeWork_item_title">Idea</h3>
+                <p class="howWeWork_item_desc">It is important for us to be one team with the customer and at the same properly separating areas of responsibility. We receive and analyze a task – then we begin to search for a perfect solution for the customer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6  brdr_b">
+        <div class="howWeWork_item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-21.png" alt="Робочий процес">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title">Working process</h3>
+              <p class="howWeWork_item_desc">We work so that you do not need to look for other contractors. Since quite often we refine upon projects of others, we understand as no one else that we are hired for result and not for the process.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-6  brdr_r">
+        <div class="howWeWork_item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-22.png" alt="Технічне завдання та прогнози">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title"> Software requirement Specifications</h3>
+              <p class="howWeWork_item_desc">Experience in public sector enables us not only to work with prepared requirement specification, but also to create them professionally. We know how to quickly and accurately describe your vision to developers with the right words.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-6">
+        <div class="howWeWork_item nbb">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-23.png" alt="Продукт">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title">Product</h3>
+              <p class="howWeWork_item_desc">The result should be the embodiment of a plan. Our work finishes when you are satisfied with a software product you receive.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+<span class="romb"> </span>
+  </div>
+</div>
+</section>
+<section class="ourSkills" id="ourSkills">
+    <ul>
+        <li><a href="#whatWeCan" class="taba">what we can</a></li>
+        <li><a href="#whatWeKnow" class="taba">what we do</a></li>
+    </ul>      
+
+      <div id="whatWeCan">
+        <div class="col-12 col-md-12 taba_content">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-31.png" alt="Управління проектами">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Project management</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Using our considerable experience, we choose the methodology and approach which best enable us to implement your project (SCRUM, Kanban, Waterfall).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-32.png" alt="Бізнес-аналіз">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Business analysis</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>The key to a successful project is an accurate task and description. Our business analysts have a remarkable experience which allows them to clarify customer's needs and prepare clear requirement specification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-33.png" alt="Розробка">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Development</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>FDI developers use modern technologies and their own solutions, which makes it possible to create high-quality analytical systems and business applications. We work on Java, Node.js, Angular, React.js</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-34.png" alt="Тестування та підтримка">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Testing and support</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>We are good at organizing manual and automated testing and the processes of supporting the implemented solutions are based on the best ITIL practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div id="whatWeKnow">       
+        <div class="col-12 col-md-12 taba_content">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-27.png" alt="Бізнес-аналіз">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Business analysis</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Our company will help to form software requirements, work out efficient requirement specification and carry out audit and optimization of your business processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-26.png" alt="Розробка ПЗ">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Software development</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>We create customized software and customize our own IT solutions for companies of the commercial and public sectors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-28.png" alt="Адміністрування та підтримка БД">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Database administration and support</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>FDI database specialists develop solutions of any complexity and provide professional support for the existing ones – we can organize efficient work with data and backup and recovery of information.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-29.png" alt="DevOPS">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                        <h3>DevOPS</h3>
+                        </div>
+                        <div class="card-text">
+                        <p>DevOPS processes make it possible to ensure a continuous process of developing and launching software. Our specialists are ready to help work out an optimal environment and DevOPS process itself, considering the needs and specifics of your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section class="products" id="products">
+  <div class="container">
+    <div class="productsWrap">
+      <div class="row">
+        <h2 class="title bg-blue text-white">products</h2>
+      </div>
+        <div class="products_crsl">
+            <div>
+                <div class="product_item">
+                    <img src="img/products/whiteant.jpg" alt="АС “WHITEANT"/>
+                    <h3>WHITEANT</h3>
+                    <p>WHITEANT analytical system is designed to set up and form managerial statements for companies of financial sector. The system also integrates with banking software through API.</p>
+                </div>
+            </div>
+            <div>
+                <div class="product_item">
+                    <img src="img/products/ad.jpg" alt="Управління рекламними площами міста"/>
+                    <h3>City advertising space management</h3>
+                    <p>The automated system is designed to keep record of and manage city advertising objects. The system includes open API for data exchange between different city departments and users – operators of an advertisement.</p>
+                </div>
+            </div>
+            <div>
+                <div class="product_item">
+                    <img src="img/products/commun.jpg" alt="Облік комунальної власності міста"/>
+                    <h3>City municipal property registration</h3>
+                    <p>The program makes it possible to keep a detailed record of and manage municipal property. Thanks to open API, there is data exchange between city departments, owners and applicants, and necessary reports and documents are generated.</p>
+                </div>
+            </div>
+            <div>
+                <div class="product_item">
+                    <img src="img/products/mayno.jpg" alt="ІАС “Майно"/>
+                    <h3>“Maino” Information Analytical System</h3>
+                    <p>The complex is designed to organize and service the city property register and display it on a map using the created geographic information system. The map may contain an unlimited number of information layers and generate reports on the basis of a sample of information on property.</p>
+                </div>
+            </div>
+            <div>
+                <div class="product_item">
+                    <img src="img/products/demogr.jpg" alt="Демографічний реєстр"/>
+                    <h3>Demographic register</h3>
+                    <p>The registering system keeps record of changes in the birth rate and death rate, helps generate documents requested by citizens and has a separate API for integrating with other products.</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+  </div>
+</section>
+<section class="advantages" id="advantages">
+  <div class="container">
+  <div class="advantagesWrap">
+    <div class="row">
+      <h2 class="title bg-green text-blue">advantages</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-4 brdr_r">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_1.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">Experienced team</h4>
+          <p class="card-text">We are proud of our people. United by a professional interest, our specialists are able to find high-quality solutions for complex tasks. As players of one team, each cares about the result for everybody.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4 brdr_r">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_2.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">Data security</h4>
+          <p class="card-text">Working with enormous sets of information and data of cities, we perfectly understand the importance of preservation and security of each byte. Our company has already obtained a number of certificates confirming that our products meet security requirements and each new development is tested and checked for reliability.Working with enormous sets of information and data of cities, we perfectly understand the importance of preservation and security of each byte. Our company has already obtained a number of certificates confirming that our products meet security requirements and each new development is tested and checked for reliability.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_3.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">High-quality documentation</h4>
+          <p class="card-text">A good software product always requires good preparation. We can not only work out requirement specification on the basis of audit, market analysis or studies, but also describe all procedures, protocols and architecture for further development and implementation both for our own projects and for orders.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="career" id="career">
+  <div class="container-fluid">
+    <div class="row">
+          <div id="carouselFooter" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title bg-green text-blue">career</h2>
+                    <h3 class="text-white">PROFESSIONAL DEVELOPMENT</h3>
+                    <p class="text-white">Ambitious project managers, curious developers, attentive analysts – we can give interesting tasks to all who seek them. Modern technology stacks and non-trivial tasks we will not let you be bored!</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Vacancy announcements</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide1.jpg" data-src="img/slider2/slide1" alt="First slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title bg-green text-blue">career</h2>
+                    <h3 class="text-white">PARTICIPATION IN SOCIALLY IMPORTANT PROJECTS</h3>
+                    <p class="text-white">Users of our programs are the same inhabitants of cities and communities as we are. That is why we create each solution as for ourselves in literal sense. Join projects which will really change our lives.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Vacancy announcements</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide2.jpg" data-src="img/slider2/slide2" alt="Second slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title bg-green text-blue">career</h2>
+                    <h3 class="text-white">YOUR TEAM</h3>
+                    <p class="text-white">FDI unites both experienced specialists and beginners. Our teams are efficient because they know how to learn from one another and mutual support and this is what makes our company successful.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Vacancy announcements</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide3.jpg" data-src="img/slider2/slide3" alt="Third slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title bg-green text-blue">career</h2>
+                    <h3 class="text-white">COMFORTABLE CONDITIONS FOR WORK</h3>
+                    <p class="text-white">We like being in the heart of events, that is why we work in the center of Kyiv. New co-working at Peremoha Square offers broad tables, tasty coffee and probably the best view from in the city.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Vacancy announcements</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide4.jpg" data-src="img/slider2/slide4" alt="4th slide">
+                </div>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselFooter" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFooter" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  </div>
+  </div>
+</section>
+<section class="footer">
+<div class="container-fluid">
+  <div class="row">
+    <div class="footerLinks bg-green">
+        <div class="col-12 col-md-4"><a href="http://peremoga.space/en/" class="text-blue" target="_blank">Our office &rang;</a></div>
+      <div class="col-12 col-md-4"><a href="https://rabota.ua/ua/company5302080" class="text-blue" target="_blank">Vacancies &rang;</a></div>
+      <div class="col-12 col-md-4"><a href="mailto:info@fdi.com.ua" class="text-blue">Send CV &rang;</a></div>
+    </div>
+  </div>
+    <div class="contacts_wrap">
+        <div class="row">
+          <h2 class="title bg-green text-blue"  id="footerAdress">contact</h2>
+        </div>
+        <div class="row">
+          <div class="adress text-white">
+            <div class="col-12 col-md-12 offset-md-4">
+              <a target="_blank" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0,+62,+%D0%9A%D0%B8%D1%97%D0%B2/@50.446132,30.4938085,17z/data=!4m13!1m7!3m6!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDYyLCDQmtC40ZfQsg!3b1!8m2!3d50.446132!4d30.4959972!3m4!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!8m2!3d50.446132!4d30.4959972" class="text-white">62 Shevchenko Blvd., Kyiv, Ukraine</a> | <a class="text-white" href="tel:+380443370391">+380 44 337 0391</a> | <a class="text-white" href="mailto:info@fdi.net.ua">info@fdi.net.ua</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

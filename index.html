@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FDI - розробник програмних продуктів для Smart City</title>
+  <meta name="keywords" content="реєстр, Територіальна громада, Smart City, смарт сити, реестр, территориальная громада" />
+  <meta name="description" content="Автоматизуємо процеси управління містом та громадами" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, min-width=320px, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>  
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header" id="top">
+        <div class="container-fluid">
+          <!-- <div class="row navbar-wrap">       -->
+            <div class="fixed-top bg-blue">
+                <div class="header-contacts text-white">
+                    <div class="container text-right">
+                        <div class="header-contact-item">
+                            <a class="text-white" href="tel:+380443370391">+380 44 337 0391</a>
+                        </div>
+                        <div class="header-contact-item">
+                            <a href="mailto:info@fdi.com.ua" class="text-white">info@fdi.com.ua</a>
+                        </div>
+                        <div class="header-contact-item links">
+                            <div>
+                                <a class="social-network-link" target="_blank" href="https://www.facebook.com/pg/FDIUkraine">
+                                    <img src="img/icon/social-facebook-circular-button.svg" alt="">
+                                </a>
+                                <a class="social-network-link" target="_blank" href="https://ru.linkedin.com/company/fdigroup">
+                                    <img src="img/icon/social-linkedin-circular-button.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-dark" id="menu">
+                        <a class="navbar-brand col-sm-3 col-md-2 col-xs-3" href="#top"><img src="img/fdi_logo_site.svg" style="width: 105px;height: 52px;" alt="FDI"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <!--<li class="nav-item dropdown">-->
+                                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                <!--про нас-->
+                                <!--</a>-->
+                                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+                                <!--<a class="dropdown-item" href="#aboutCompany">про компанію</a>-->
+                                <!--<a class="dropdown-item" href="#history">історія</a>-->
+                                <!--<a class="dropdown-item" href="#products">продукти</a>-->
+                                <!--</div>-->
+                                <!--</li>-->
+                                <li class="nav-item">
+                                    <!--<a class="nav-link" href="#whatWeCan">що ми можемо</a>-->
+                                    <a class="nav-link" href="#products">Продукти</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!--<a class="nav-link" href="#whatWeKnow">що ми вміємо</a>-->
+                                    <a class="nav-link" href="#aboutCompany">Компанія</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#career">Кар'єра</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footerAdress">Контакти</a>
+                                </li>
+                            </ul>
+                            <a class="btn col-sm-3" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScYzaEHnjtl340ewr2xAj2-PZDg8LPIWJob4D8k_GLU45hiBQ/viewform">Замовити демонстрацію</a>
+                            <!--<span class="navbar-text text-white col-sm-2">-->
+                            <!--<span class="text-green">укр</span>-->
+                            <!--<a class="text-white" href="/eng" id="langswitch">eng</a>-->
+                            <!--</span>-->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+         <!-- </div> -->
+          <div class="row">
+                  <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+                    <!--<div class="carousel-inner" role="listbox">-->
+                      <!--<div class="carousel-item active">-->
+                      <!--<div class="row">-->
+                        <!--<div class="col-12 col-md-6">-->
+                          <!--<div class="slide-desc" id="fadeLink1">-->
+                            <!--<h3 class="text-white">FDI — СОФТВЕРНА</h3>-->
+                            <!--<h3 class="text-white">КОМПАНІЯ</h3>-->
+                            <!--<p class="text-white">Наші розробки — це складні облікові та реєстрові системи, які працюють для фінансового, муніципального, освітнього, аграрного секторів.</p>-->
+                            <!--<a class="btn fadeLink" href="#aboutCompany">Про компанію</a>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-12 col-md-6">-->
+                          <!--<img src="img/slider1/slide1.jpg" data-src="img/slider1/slide1" alt="First slide" />-->
+                        <!--</div>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                       
+                      <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="slide-desc" id="fadeLink2">
+                            <h3 class="text-white">Новітні програми —</h3>
+                            <h3 class="text-white">сучасні міста</h3>
+                            <p class="text-white">Програмні продукти FDI вирішують комплексні й цікаві завдання в управлінні містами та громадами. Наші замовники — великі і малі спільноти України, яким ми допомагаємо просуватися в цифрову епоху.</p>
+                            <a class="btn" href="#products">Наші продукти</a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <img class="" src="img/slider1/slide2.jpg" data-src="img/slider1/slide2" alt="First slide">
+                        </div>
+                      </div>
+                      </div>
+                      <!--<div class="carousel-item">-->
+                      <!--<div class="row">-->
+                        <!--<div class="col-12 col-md-6">-->
+                          <!--<div class="slide-desc">-->
+                            <!--<h3 class="text-white">Вашу роботу</h3>-->
+                            <!--<h3 class="text-white">побачать усі!</h3>-->
+                            <!--<p class="text-white">Робота в FDI - це не лише професійний виклик для кожного ІТ-фахівця, це своєрідна місія створювати кращі середовища для проживання мільйонам людей. Приєднуйтеся і зробіть свій внесок - без зволікання.</p>-->
+                            <!--<a class="btn" href="https://rabota.ua/ua/company5302080">Приєднуйтеся до FDI</a>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-12 col-md-6">-->
+                          <!--<img class="" src="img/slider1/slide3.jpg" data-src="img/slider1/slide3" alt="First slide">-->
+                          <!--&lt;!&ndash;<img class="strip" src="img/slider1/strip.png" alt="">&ndash;&gt;-->
+                        <!--</div>-->
+                      <!--</div>-->
+                      <!--</div>-->
+        
+                    <!--</div>-->
+                    <!--<a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">-->
+                      <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                      <!--<span class="sr-only">Previous</span>-->
+                    <!--</a>-->
+                    <!--<a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">-->
+                      <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                      <!--<span class="sr-only">Next</span>-->
+                    <!--</a>-->
+                  </div>
+          </div>
+        </div>
+        </section>
+<section class="products" id="products">
+    <div class="container">
+            <h2 class="title text-blue">Продукти</h2>
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/urbio.png" alt="Єдина міська платформа управління даними"/>
+                            <h3 class="product_item__title">Єдина міська платформа управління даними</h3>
+                            <div class="p">
+                                Платформа Urbio <br>
+                                Єдиний інформаційний простір, що об’єднує:
+                                <ol>
+                                    <li>Владу</li>
+                                    <li>Суспільство</li>
+                                    <li>Бізнес-кола</li>
+                                </ol>
+                                для їх взаємодії у вирішенні питань управління життям міста (населеного пункту), а також агрегує в єдиний комплекс інформаційні сервіси та прикладне програмне забезпечення, що вже використовується містом.
+                                <br>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Платформа Urbio» № 3885 від 03.05.2018 року</span>
+                            </div>
+                    </div>            
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/passport.png" alt="Реєстр територіальної громади"/>
+                            <h3 class="product_item__title">Реєстр територіальної громади</h3>
+                            <div class="p">Автоматизація процесу реєстрації громадян міста та обміну даними з структурними підрозділами.
+                                <br>Система РТГ, виконує наступні web -операції:
+                                <ul>
+                                    <li>Реєстрація, або зняття з реєстрації місця проживання (перебування) громадянина</li>
+                                    <li>Ведення особистої карти громадянина</li>
+                                    <li>Ведення інформації щодо родинних зв’язків громадянина</li>
+                                    <li>Інтеграція з ДМС, ЦВК, адресним реєстром</li>
+                                    <li>Облік УНЗР з використанням ID карти</li>
+                                    <li>Інформація щодо служби в ВСУ</li>
+                                    <li>Робоче місце:  комунальних  підприємств, Мінсоцполітики, Нотаріуса, ДФС, Суди</li>
+                                </ul>
+                                <a href="rtg.html" class="btn-blue col-sm-6">Детальніше</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/address.png" alt="Єдиний реєстр адрес"/>
+                            <h3 class="product_item__title">Єдиний реєстр адрес</h3>
+                            <div class="p">
+                                Urbio Облік адрес <br>
+                                Єдиний  реєстр адрес  фізичних об’єктів  нерухомості за набором  параметрів  та обмін  даними адрес між системами
+                                <br>
+                                Переваги:
+                                <ul>
+                                    <li>Вирішується проблема із відсутністю адрес певних  об’єктів у реєстрах та недостовірності таких даних</li>
+                                    <li>Інформація про адреси максимально повна</li>
+                                    <li>Створюється єдиний центр для обліку адрес  об’єктів без дублювання</li>
+                                    <li>Спрощується обмін даними з іншими  структурними підрозділами</li>
+                                    <li>Є можливість надати доступ до системи  зацікавленим організаціям та бізнесу</li>
+                                </ul>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Urbio Облік адрес» № 3805 від 03.03.2018 року </span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/mayno.png" alt="Облік та управління об’єктами комунального власності"/>
+                            <h3 class="product_item__title">Управління об’єктами комунального власності</h3>
+                            <div class="p">
+                                Urbio Комунальне майно:
+                                <ol>
+                                    <li>Облік контрагентів та об’єктів комунального майна</li>
+                                    <li>Оренда комунального майна міста</li>
+                                    <li>Облік та контроль рецензування звітів про оцінку майна</li>
+                                    <li>Ведення інформації, що стосується корпоративних прав територіальної громади міста у майні господарських товариств</li>
+                                    <li>Ведення обліку судових справ та виконавчих проваджень</li>
+                                    <li>Формування інформаційно-статистичної звітності</li>
+                                </ol>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Urbio Комунальне майно» № 3830 від 21.03.2018 року</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/arhit.png" alt="Реєстр пам’яток архітектури"/>
+                            <h3 class="product_item__title">Реєстр пам’яток архітектури</h3>
+                            <div class="p">
+                                Urbio Пам’ятки архітектури <br>
+                                Розміщення публічної інформації про пам'ятки архітектури (місцевого та національного значення) на мапі міста для підвищення обізнаності територіальної громади та створення умов для громадського контролю за збереженням пам'яток культурної спадщини, а саме:
+                                <ol>
+                                    <li>Пам'ятки культурної спадщини національного значення</li>
+                                    <li>Пам'ятки культурної спадщини місцевого значення</li>
+                                    <li>Щойно виявлені об'єкти (пам’ятки) культурної спадщини</li>
+                                </ol>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Urbio Пам’ятки архітектури» № 3829 від 21.03.2018 року</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/pai.png" alt="Автоматизація обліку об’єктів пайової участі"/>
+                            <h3 class="product_item__title">Автоматизація обліку об’єктів пайової участі</h3>
+                            <div class="p">
+                                Urbio Пайова участь:
+                                <ol>
+                                    <li>Ведення інформації про об’єкти будівництва та статус внеску пайової участі з прив’язкою на мапі міста</li>
+                                    <li>Ведення договорів</li>
+                                    <li>Калькуляція сум внесків пайової участі</li>
+                                    <li>Контроль внесків пайової участі</li>
+                                </ol>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Urbio Пайова участь» № 3804 від 03.03.2018 року</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/ad.jpg" alt="Управління рекламними площами міста"/>
+                            <h3 class="product_item__title">Управління рекламними площами міста</h3>
+                            <div class="p">
+                                Urbio E-реклама <br>
+                                Автоматизована система призначена для обліку та управління рекламними об’єктами міста. Система включає відкритий API для обміну даними між різними департаментами міста та користувачами — операторами реклами.
+                                <br>
+                                <span>Рішення про реєстрацію авторського права на комп’ютерну програму «Urbio E-реклама» № 3872 від 20.04.2018 року</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product_item">
+                            <img src="img/products/demogr.png" alt="Демографічний реєстр"/>
+                            <h3 class="product_item__title">Демографічний реєстр</h3>
+                            <div class="p">
+                                Реєстрова система веде облік змін народжуваності та смертності, допомагає у формуванні на запит необхідних документів для громадян, має окремий АРІ для інтеграції з іншими продуктами.
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="products-container"> -->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<div class="product_item">-->
+                <!--<img src="img/products/whiteant.jpg" alt="АС “WHITEANT"/>-->
+                <!--<h3>АС “WHITEANT”</h3>-->
+                <!--<p>Аналітична система WHITEANT призначена для налаштування та формування управлінської звітності для компаній фінансового сектору. Система також інтегрується з банківським ПЗ через API.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<div class="product_item">-->
+                <!--<img src="img/products/commun.jpg" alt="Облік комунальної власності міста"/>-->
+                <!--<h3>Облік комунальної власності міста</h3>-->
+                <!--<p>Програма дозволяє вести детальний облік та управління об’єктами комунальної власності. Завдяки відкритому API дані обмінюються між департаментами міста, орендодавцями та заявниками, а також формуються необхідні звіти та документи.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<div class="product_item">-->
+                <!--<img src="img/products/mayno.jpg" alt="ІАС “Майно"/>-->
+                <!--<h3>ІАС “Майно”</h3>-->
+                <!--<p>Комплекс призначений для організації та обслуговування реєстру майна міста та відображення його на карті за допомогою створеної гео-інформаційної системи. Карта може містити необмежену кількість інформаційних шарів та формувати звіти на підставі вибірки даних про майно.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+            <!-- </div> -->
+    </div>
+</section>
+<section class="aboutCompany" id="aboutCompany">
+<div class="container">
+  <h2 class="title text-blue">Про компанію</h2>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac1.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-green">
+          <p class="card-text">
+              FDI —IT-компанія з України, яка заснована в 2011році. Ми придбали значний досвід  провідного  розробника програмного забезпечення в  автоматизації процесів управління містами  та територіальними громадами.
+              <br>7 років на ринку розробки та впровадження
+              <br>80 + досвідчених членів команди в Києві
+              <br>30 + проектів у галузі управління даними й процесами
+          </p>
+        </div>
+        <a href="#history" class="btn bg-blue text-white">Історія<span></span></a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac2.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-blue">
+          <p class="card-text text-white">З  2016 року команда FDI починає створювати єдину платформу Urbio для управляння розумним містом. Платформа, дозволила забезпечити автоматизоване використання єдиних джерел даних, які будуть використовувати всі програмні рішення міста. </p>
+        </div>
+        <a href="#products" class="btn bg-green text-blue">Продукти</a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top img-responsive" src="img/aboutCompany/ac3.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block bg-green">
+          <p class="card-text">Створення всіх систем виконується із використанням принципів концепції Free and Open Source Software (FOSS). Вправна робота з масивами даних та аналітикою — наша сильна сторона. Використовуючи стек сучасних технологій Angular, PostgreSQL, React, Java, MongoDB, NodeJS, ми маємо змогу втілити в життя найсміливіші ідеї.</p>
+        </div>
+        <a href="#ourSkills" class="btn bg-blue text-white">Що ми можемо</a>
+      </div>
+    </div>
+</div>
+</section>
+<section class="history" id="history">
+<div class="container-fluid">
+  <div class="historyWrap">
+    <h2 class="title text-blue">Історія</h2>
+  <ul class="row justify-content-center">
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2011</div>
+        <div class="historyDesc">
+          <h3 class="">Заснування компанії FDI</h3>
+          <p class="">Компанія створена як системний інтегратор для фінансовго сектору, працює з низкою українських банків.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2013</div>
+        <div class="historyDesc">
+          <h3 class="">Створення програмного комплексу Whiteant</h3>
+          <p class="">Компанія розробила та впровадила власну аналітично-платіжну систему в шести українських банках.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2015</div>
+      <div class="historyDesc">
+          <h3 class="">Розширення сфери діяльності</h3>
+          <p class="">Наші спеціалісти реалізують ряд проектів з поставкою програмно-апаратних комплексів на базі IBM, Hitachi, СУБД Oracle.</p>
+      </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date">2016</div>
+        <div class="historyDesc">
+          <h3 class="">Замовлення з державного сектору</h3>
+          <p class="">FDI починає розробку програмного забезпечення в рамках державних замовлень, в тому числі — розроблена та впроваджена система “ІАС Майно” для Київської міської державної адміністрації.</p>
+        </div><div class="clearfix"></div>
+    </li>
+    <li class="col-lg-2 col-md-12">
+      <div class="date-today">Сьогоднi</div>
+        <div class="historyDesc">
+          <h3 class="">Розвиток експертизи</h3>
+          <p class="">
+              Фахiвцi FDI працюють над проектами для автоматизації управління містом. Компанія бере участь у конкурсах на розробку ПЗ для міст по всій Україні.
+          </p>
+        </div><div class="clearfix"></div>
+    </li>
+  </ul>
+  </div>
+    <span class="romb"> </span>
+</div>
+</section>
+<section class="howWeWork" id="howWeWork">
+<div class="">
+  <div class="howWeWorkWrap">
+    <h2 class="title text-blue">Як ми працюємо</h2>
+    <div class="row ">
+        <div class="col-12 col-md-6">
+          <div class="howWeWork_item">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <img src="img/howWeWork/Untitled-20.png" alt="Ідея">
+              </div>
+              <div class="col-md-9">
+                <h3 class="howWeWork_item_title">Ідея</h3>
+                <p class="howWeWork_item_desc">Для нас важливо бути однією командою з замовником, водночас правильно розділяючи зони відповідальності. Ми отримуємо та аналiзуємо задачу — з цього моменту починається пошук ідеального рішення для клієнта.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+        <div class="howWeWork_item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-21.png" alt="Робочий процес">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title">Робочий процес</h3>
+              <p class="howWeWork_item_desc">Ми працюємо так, аби вам більше не довелося шукати інших виконавців. Досить часто доробляючи проекти за іншими підрядниками, ми як ніхто розуміємо, що нас наймають для результату, а не для процесу.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-6">
+        <div class="howWeWork_item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-22.png" alt="Технічне завдання та прогнози">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title">Технічне завдання та прогнози</h3>
+              <p class="howWeWork_item_desc">Досвід роботи в державному секторі дозволяє нам працювати не лише з готовими технічними завданнями, але й професійно створювати їх. Ми знаємо, як швидко та коректно описати розробникам ваше бачення правильними словами.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-6">
+        <div class="howWeWork_item nbb">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/howWeWork/Untitled-23.png" alt="Продукт">
+            </div>
+            <div class="col-md-9">
+              <h3 class="howWeWork_item_title">Продукт</h3>
+              <p class="howWeWork_item_desc">Результат повинен бути втіленням плану. Наша робота закінчується тоді, коли ви задоволені отриманим програмним продуктом.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+<!-- <span class="romb"> </span> -->
+  </div>
+</div>
+</section>
+<section class="ourSkills" id="ourSkills">
+    <ul>
+        <li><a href="#whatWeCan" class="taba">Що ми можемо</a></li>
+        <li><a href="#whatWeKnow" class="taba">Що ми вміємо</a></li>
+    </ul>      
+
+      <div id="whatWeCan">
+        <div class="col-12 col-md-12 taba_content">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-31.png" alt="Управління проектами">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Управління проектами</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Використовуючи суттєвий досвід, ми обираємо ту методологію та підхід, які найкращим чином дозволять реалізувати ваш проект (SCRUM, Kanban, Waterfall).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-32.png" alt="Бізнес-аналіз">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Бізнес-аналіз</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Запорука успішного проекту — правильне завдання та опис. Наші бізнес-аналітики володіють неабияким досвідом, який дає можливість прояснити потреби замовника та сформувати зрозуміле технічне завдання.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-33.png" alt="Розробка">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Розробка</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Розробники FDI використовують сучасні технології та власні рішення, що дозволяє створювати якісні аналітичні системи та бізнес додатки. Ми працюємо на Java, Node.js, Angular, React.js</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatWeCan/Untitled-34.png" alt="Тестування та підтримка">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Тестування та підтримка</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Ми добре вміємо організувати мануальне та автоматизоване тестування, а процеси підтримки впроваджених рішень засновані на кращих практиках ITIL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div id="whatWeKnow">       
+        <div class="col-12 col-md-12 taba_content">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-27.png" alt="Бізнес-аналіз">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Бізнес-аналіз</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Наша компанія допоможе сформувати вимоги до програмного забезпечення, створити ефективне технічне завдання та провести аудит й оптимізацію ваших бізнес-процесів.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-26.png" alt="Розробка ПЗ">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Розробка ПЗ</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Ми створюємо програмне забезпечення на замовлення клієнта та адаптуємо власні IT-рішення для організацій комерційного та державного сектору.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-28.png" alt="Адміністрування та підтримка БД">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Адміністрування та підтримка БД</h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Спеціалісти баз даних FDI розробляють рішення будь-якої складності та забезпечують кваліфіковану підтримку вже існуючих – ми вміємо оранізувати ефективну роботу з даними, а також резервування й відновлення інформації.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="img/whatKnow/Untitled-29.png" alt="DevOPS">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                        <h3>DevOPS</h3>
+                        </div>
+                        <div class="card-text">
+                        <p>Процеси DevOPS дозволяють забезпечити безперервний процес розробки та запуску програмного забезпечення. Наші фахівці готові допомогти вибудувати оптимальне середовище та сам процес DevOPS, враховуючи потреби та специфіку вашого бізнесу.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section class="advantages" id="advantages">
+  <div class="container">
+  <div class="advantagesWrap">
+    <h2 class="title text-blue">Переваги</h2>
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_1.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">Досвідчена команда</h4>
+          <p class="card-text">Ми пишаємося своїми людьми. Об’єднані професійним інтересом, наші спеціалісти здатні знаходити якісні рішення для складних завдань. Як гравці однієї команди, кожен дбає про результат для всіх.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_2.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">Безпека даних</h4>
+          <p class="card-text">Працюючи з величезними масивами інформації та даних міст, ми добре розуміємо важливість збереження і безпеки кожного байта. Наша компанія вже отримала ряд сертифікатів відповідності продуктів вимогам безпеки, а кожна нова розробка тестується та перевіряється на надійність.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+      <div class="card ">
+        <img class="card-img-top" src="img/adventages/advantages_3.png" data-src="holder.js/100%x180/" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title text-green">Якісна документація</h4>
+          <p class="card-text">Хороший програмний продукт завжди вимагає хорошої підготовки. Ми вміємо не лише створювати технічні завдання на основі аудиту, аналізи ринку чи досліджень, а й описувати всі процедури, протоколи та архітектуру для подальшої розробки й впровадження — як для своїх проектів, так і на замовлення.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="career" id="career">
+  <div class="container-fluid">
+    <div class="row">
+          <div id="carouselFooter" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title text-white">Кар'єра</h2>
+                    <h3 class="text-white">Професійний розвиток</h3>
+                    <p class="text-white">Амбітні керівники проектів, допитливі девелопери, уважні аналітики — ми можемо дати цікаві завдання всім, хто їх шукає. Сучасні стеки технологій та нетривіальні задачі не дадуть нудьгувати!</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Подивитися вакансії</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide1.jpg" data-src="img/slider2/slide1" alt="First slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title text-white">Кар'єра</h2>
+                    <h3 class="text-white">Участь у соціально-важливих проектах</h3>
+                    <p class="text-white">Користувачі наших програм — це такі ж мешканці міст та громад, як і ми самі, тому кожне рішення ми пишемо в прямому сенсі — "як для себе". Долучайтеся до проектів, які справді змінюють наше життя.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Подивитися вакансії</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide2.jpg" data-src="img/slider2/slide2" alt="Second slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title text-white">Кар'єра</h2>
+                    <h3 class="text-white">Твоя команда</h3>
+                    <p class="text-white">FDI об'єднує і досвідчених спеціалістів, і новачків. Наші команди ефективні завдяки вмінню вчитися один в одного та взаємній підтримці, і саме це робить нашу компанію успішною.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Подивитися вакансії</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide3.jpg" data-src="img/slider2/slide3" alt="Third slide">
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="slide-desc">
+                    <h2 class="title text-white">Кар'єра</h2>
+                    <h3 class="text-white">Комфортні умови для роботи</h3>
+                    <p class="text-white">Ми любимо бути в центрі подій, тому й працюємо в серці Києва. Новий коворкінг на площі Перемоги пропонує широкі столи, смачну каву та чи не найкращий краєвид з вікна.</p>
+                    <a class="btn" href="https://rabota.ua/ua/company5302080">Подивитися вакансії</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img class="carousel-item-img" src="img/slider2/slide4.jpg" data-src="img/slider2/slide4" alt="4th slide">
+                </div>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselFooter" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFooter" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  </div>
+  </div>
+</section>
+
+
+<div class="footerLinks bg-green">
+    <a href="http://peremoga.space/" class="text-blue footerLinks-link" target="_blank">Наш офіс</a>
+    <a href="https://rabota.ua/ua/company5302080" class="text-blue footerLinks-link" target="_blank">Вакансії</a>
+    <a href="mailto:info@fdi.com.ua" class="text-blue footerLinks-link">Відправити CV</a>
+</div>
+
+<section class="footer">
+    <div class="contacts_wrap">
+        <h2 class="title text-white"  id="footerAdress">Контакти</h2>
+        <div class="row">
+          <div class="adress text-white">
+              <div class="row">
+
+                      <div class="col-md-2">
+                          <div class="contact-item">
+                              <a class="text-white" href="tel:+380443370391">+380 44 337 0391</a>
+                          </div>
+                          <div class="contact-item">
+                              <a class="text-white" href="mailto:info@fdi.net.ua">info@fdi.net.ua</a>
+                          </div>
+                          <div class="contact-item">
+                              <a target="_blank" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0,+62,+%D0%9A%D0%B8%D1%97%D0%B2/@50.446132,30.4938085,17z/data=!4m13!1m7!3m6!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDYyLCDQmtC40ZfQsg!3b1!8m2!3d50.446132!4d30.4959972!3m4!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!8m2!3d50.446132!4d30.4959972" class="text-white">бул. Шевченка, 62, Київ, Україна</a>
+                          </div>
+                      </div>
+                  <div class="col-md-2">
+                      <div class="contact-item">
+                          <a class="text-white" target="_blank" href="https://www.facebook.com/pg/FDIUkraine"><img src="img/icon/social-facebook-circular-button.svg" alt="">Facebook</a>
+                      </div>
+                      <div class="contact-item">
+                          <a class="text-white" target="_blank" href="https://ru.linkedin.com/company/fdigroup"><img src="img/icon/social-linkedin-circular-button.svg" alt="">LinkedIn</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="contact-item">
+                          <a class="btn" target="_blank" href="Urbio_presentation_short.pdf">Завантажити презентацію</a>
+                      </div>
+                      <div class="contact-item">
+                          <a class="btn secondary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScYzaEHnjtl340ewr2xAj2-PZDg8LPIWJob4D8k_GLU45hiBQ/viewform">Замовити демонстрацію</a>
+                      </div>
+                  </div>
+                  <!--<div class="col-12 col-md-12 offset-md-4">-->
+                      <!--<a target="_blank" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0,+62,+%D0%9A%D0%B8%D1%97%D0%B2/@50.446132,30.4938085,17z/data=!4m13!1m7!3m6!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDYyLCDQmtC40ZfQsg!3b1!8m2!3d50.446132!4d30.4959972!3m4!1s0x40d4cef4c26b71bb:0xd6055434b7ae93!8m2!3d50.446132!4d30.4959972" class="text-white">Україна, Київ, бул. Шевченка, 62</a> | <a class="text-white" href="tel:+380443370391">+380 44 337 0391</a> | <a class="text-white" href="mailto:info@fdi.net.ua">info@fdi.net.ua</a>-->
+                  <!--</div>-->
+              </div>
+
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
