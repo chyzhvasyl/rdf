@@ -479,7 +479,7 @@ body{
 
 /*StyleList*/
 .bg-green, .bg-green:hover{
-  background: #B2CE3D;
+  background: #3C5067;
 }
 .bg-blue, .bg-blue:hover{
   background: #3C5067;
@@ -528,16 +528,25 @@ body{
 
 .header .header-contacts {
     background-color: rgba(51, 70, 94, 1);
-    height: 30px;
+    height: auto;
+    width: 100%;
 }
 .header .header-contacts .container {
     height: 100%;
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
 }
 
+@media (max-width: 425px) {
+    .header .header-contact-item{
+        color: red;
+
+    }
+}
+
 .header .header-contact-item {
-    display: flex;
+    float: right;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-right: 30px;
@@ -797,7 +806,16 @@ ul.navbar-nav-sub  {
   background: url(../img/bg/212.png);
 }
 
+.time{
+    background: #B2CE3D;
+display: block;
+    z-index: 500;
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px;
 
+
+}
 .header .strip{
   position: absolute;
   right: 0;
@@ -932,7 +950,7 @@ carousel-item{
 .product_item{  
   /* width: 32%; */
   margin: 7px;  
-  height: 400px;
+  height: 440px;
   background: #B2CE3D;
   transition: .5s linear;
 }
@@ -942,6 +960,18 @@ carousel-item{
     color: white;
 }
 */
+@media (max-width:1200px){
+    .product_item {
+        height: 480px;
+    }
+}
+
+
+@media (max-width:768px){
+    .product_item {
+        height: 590px;
+    }
+}
 
 .product_item img{  
     width: 100%;
@@ -1015,6 +1045,7 @@ carousel-item{
 
 .aboutCompany .card{
   /* margin-bottom: 40px; */
+    background: #f2f2f2;
 }
 .aboutCompany .card-text{
   padding: 20px 28px;
@@ -1674,7 +1705,7 @@ carousel-item{
 
 .footer .contacts_wrap{ 
      background: #3C5067;
-     margin: 0px -15px;
+     margin: 0px 0px;
      /*background-image: url('../img/footer.png');*/
      background-repeat: no-repeat;
      background-position: right;

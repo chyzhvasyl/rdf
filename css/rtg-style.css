@@ -522,20 +522,30 @@ body{
 
 .header .header-contacts {
     background-color: rgba(51, 70, 94, 1);
-    height: 30px;
+    height: auto;
+    width: 100%;
 }
 .header .header-contacts .container {
     height: 100%;
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
 }
 
+@media (max-width: 425px) {
+    .header .header-contact-item{
+        color: red;
+
+    }
+}
+
 .header .header-contact-item {
-    display: flex;
+    float: right;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-right: 30px;
 }
+
 
 .header .header-contact-item:not(.links) a {
     transition: 0.2s linear;

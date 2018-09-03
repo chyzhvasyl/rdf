@@ -39,7 +39,7 @@
           <!-- <div class="row navbar-wrap">       -->
             <div class=" container-fluid fixed-top bg-blue p-0">
                 <div class="header-contacts text-white">
-                    <div class="container text-right">
+                    <div class="container-fluid text-right">
                         <div class="header-contact-item">
                             <a class="text-white" href="tel:+380443370391">+380 44 337 0391</a>
                         </div>
@@ -72,6 +72,9 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#products">Продукти</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#aboutCompany1">Новини</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html#aboutCompany">Компанія</a>
@@ -157,7 +160,8 @@
 <section class="products" id="products">
     <div class="container">
             <h2 class="title text-blue">Продукти</h2>
-            <div class="row no-gutters">
+            <div class="row no-gutters" style="">
+
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="product_item">
                             <img src="img/products/urbio.png" alt="Єдина міська платформа управління даними"/>
@@ -314,8 +318,108 @@
             <!-- </div> -->
     </div>
 </section>
-<section class="aboutCompany" id="aboutCompany">
-<div class="container">
+<!-- Новини!!! -->
+    <section class="aboutCompany" id="aboutCompany1">
+        <div class="container">
+            <h2 class="title text-blue">Новини</h2>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card "  >
+                        <div class="time">04.07.2015</div>
+                        <img class="card-img-top img-responsive" src="img/aboutCompany/ac1.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+                        <div class="card-block bg-green" >
+                            <p class="card-text text-white">
+                                FDI —IT-компанія з України, яка заснована в 2011році. Ми придбали значний досвід  провідного  розробника програмного забезпечення в  автоматизації процесів управління містами  та територіальними громадами.
+                                <br>7 років на ринку розробки та впровадження
+                                <br>80 + досвідчених членів команди в Києві
+                                <br>30 + проектів у галузі управління даними й процесами
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card ">
+                        <div class="time">04.07.2015</div>
+                        <img class="card-img-top img-responsive" src="img/aboutCompany/ac2.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+
+                        <div  class="card-block bg-blue">
+                            <p class="card-text text-white">З  2016 року команда FDI починає створювати єдину платформу Urbio для управляння розумним містом. Платформа, дозволила забезпечити автоматизоване використання єдиних джерел даних, які будуть використовувати всі програмні рішення міста. </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card ">
+                        <div class="time">04.07.2015</div>
+                        <img class="card-img-top img-responsive" src="img/aboutCompany/ac3.jpg" data-src="holder.js/100%x180/" alt="Card image cap">
+                        <div class="card-block bg-green" >
+                            <p class="card-text text-white">Створення всіх систем виконується із використанням принципів концепції Free and Open Source Software (FOSS). Вправна робота з масивами даних та аналітикою — наша сильна сторона. Використовуючи стек сучасних технологій Angular, PostgreSQL, React, Java, MongoDB, NodeJS, ми маємо змогу втілити в життя найсміливіші ідеї.</p>
+                        </div>
+
+                        <style>
+                            #button7, #button8 {
+                                font-weight: 700;
+
+                                text-decoration: none;
+                                padding: .8em 1em calc(.8em + 3px);
+                                border-radius: 3px;
+                                background: #B2CE3D;
+                         margin-top: 20px;
+                                margin-bottom: 20px;
+                                transition: 0.2s;
+                                color: #3C5067;
+                            }
+                            #button7, #button8:hover { background: rgba(178, 206, 61, 0.88); }
+                            #button7, #button8:active {
+                                background: rgba(178, 206, 61, 0.88);
+                                box-shadow: 0 3px rgba(178, 206, 61, 0.88) inset;
+                            }</style>
+
+                        <div style="  background-color: #3C5067;">
+
+                            <a type="button" id="button7">Читати докладніше</a>
+                            <!--
+
+                            <a type="button"  style="margin-top: 0; margin-bottom: 20px; font-size: 20px;
+            font-weight: bold; outline: 0 !important;
+    color: #3C5067;
+    background: #B2CE3D;
+    align-content: center;
+    border-radius: 3px;
+    transition: 0.2s linear;
+    box-shadow: 0px 1px 0.5px 1px rgba(30,45,63, .75);
+" class="btn ">Читати докладніше</a> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div style="  margin-left: 45%">
+    <a type="button" href="news.html" id="button8">Всі новини</a>
+   <!-- <a type="button"  style="
+            font-weight: bold;
+outline: 0 !important;
+ font-size: 20px;
+    color: #3C5067;
+    background: #B2CE3D;
+    align-content: center;
+    border-radius: 3px;
+    transition: 0.2s linear;
+    box-shadow: 0px 1px 0.5px 1px rgba(30,45,63, .75);
+" class="btn ">Всі новини</a>
+-->
+
+</div>
+
+
+        </div>
+    </section>
+
+
+
+<section class="aboutCompany" id="aboutCompany" style="    background: #f2f2f2">
+<div class="container" style="color: white">
   <h2 class="title text-blue">Про компанію</h2>
   <div class="row">
     <div class="col-12 col-lg-4">
@@ -338,7 +442,7 @@
         <div class="card-block bg-blue">
           <p class="card-text text-white">З  2016 року команда FDI починає створювати єдину платформу Urbio для управляння розумним містом. Платформа, дозволила забезпечити автоматизоване використання єдиних джерел даних, які будуть використовувати всі програмні рішення міста. </p>
         </div>
-        <a href="#products" class="btn bg-green text-blue">Продукти</a>
+        <a href="#products" style="color: white" class="btn bg-green text-blue">Продукти</a>
       </div>
     </div>
     <div class="col-12 col-lg-4">
@@ -766,7 +870,7 @@
           </div>
         </div>
     </div>
-</div>
+
 </section>
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
